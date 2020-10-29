@@ -10,6 +10,7 @@ services:
     command: python /usr/src/app/manage.py runserver 0.0.0.0:8000
     env_file:
       - .env.dev
+    restart: always
     depends_on:
       - db
   db:
@@ -20,6 +21,7 @@ services:
       - POSTGRES_USER=hello_django
       - POSTGRES_PASSWORD=hello_django
       - POSTGRES_DB=hello_django_dev
+    restart: always
 
 volumes:
   postgres_data:
