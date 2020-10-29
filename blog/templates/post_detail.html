@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="card mb-2 p-2">
+            <h4>{{ post.title }}</h4>
+            <p>{{ post.body }}</p>
+            <div>{{ post.created_date }}</div>
+        </div>
+            <div class="card mb-2 p-2">
+            {% load mptt_tags %}
+            {% recursetree comments %}
+                <span>{{ node.date_added }}</span>
+                <p>{{ node.user_comment }}</p>
+              <form method="post" action="/comment_add/{{ node.post.id }}">
+                {% csrf_token %}
+                  <input name="comment_text" type="text" class="form-control">
+                <input type="hidden" name="comment_id" value="{{ node.id }}">
+                  <div class="text-right">
+                      <button type="submit" class="btn btn-link m-3">Reply</button>
+                  </div>
+              </form>
+                {% if not node.is_leaf_node %}
+                    <div style="padding-left: 20px">
+                        {{ children }}
+                    </div>
+                {% endif %}
+
+                {% endrecursetree %}
+        </div>
+    </div>
+
+{% endblock %}
+
