@@ -1,7 +1,9 @@
 from django.shortcuts import render
 from blog.models import Post, Category
+from django.contrib.auth.decorators import login_required
 
 
+@login_required()
 def index(request):
     posts = Post.objects.all().prefetch_related('category')
     categories = Category.objects.all()

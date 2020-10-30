@@ -22,7 +22,7 @@ import debug_toolbar
 
 urlpatterns = [
                   path('', include('blog.urls')),
-                  url(r'^account/', include("accounts.urls")),
+                  url(r'^accounts/', include("accounts.urls")),
                   path('admin/', admin.site.urls),
                   path('__debug__/', include(debug_toolbar.urls)),
               ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
