@@ -2,7 +2,7 @@
 <ul>
     {% recursetree categories %}
     <li>
-        <a href="/category/{{ node.slug }}">{{ node.title }}</a>
+        <a href="/category/{{ node.slug }}">{{ node.title }} ({{ node.post_set.count }})</a>
             {% if not node.is_leaf_node %}
                 <ul>
                     {{ children }}

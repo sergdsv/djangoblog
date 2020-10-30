@@ -4,10 +4,10 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-3">
             {% include 'categories.html' %}
         </div>
-        <div class="col-md-10">
+        <div class="col-md-9">
             {% for post in posts %}
                 <div class="card mb-2 p-2">
                     <a href="/post/{{ post.slug }}"><h4>{{ post.title }}</h4></a>

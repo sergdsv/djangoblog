@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class = "container d-flex h-100">
+      <div class = "row align-self-center w-100">
+        <div class="col-6 mx-auto">
+            <div class="card">
+            <div class="m-3">
+                <h2>{{title}}</h2>
+                <form method = 'post' action= '' enctype = "multipart/form-data">
+                    {% csrf_token %}
+                    {{form.as_p }}
+                    </label><br>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">{{title}}</button>
+                    <br>
+                    {% if title == "Login" %}<h5>Not Registered? <a href = "/accounts/register">Register Here</a></h5>{% endif %}
+                    {% if title == "Register" %}<h5>Already Registered? <a href = "/accounts/login">Login Here</a></h5>{% endif %}
+                </form>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
