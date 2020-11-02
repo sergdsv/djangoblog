@@ -44,3 +44,9 @@ def category_show(request, slug):
             'categories': categories
          }
     )
+
+
+def resume(request):
+
+    return render(request, 'resume.html', {})
+

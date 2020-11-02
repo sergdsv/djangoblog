@@ -1,0 +1,238 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+{% load static %}
+    <link href="{% static 'css/resume.css' %}" rel="stylesheet" media="screen">
+	<div class="main-wrapper">
+		<div class="container px-3 px-lg-5">
+			<article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
+
+				<div class="resume-header">
+					<div class="row align-items-center">
+						<div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
+							<h2 class="resume-name mb-0 text-uppercase">Sergey Danilevsky</h2>
+							<div class="resume-tagline mb-3 mb-md-0">System Engineer</div>
+						</div><!--//resume-title-->
+						<div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
+							<ul class="list-unstyled mb-0">
+								<li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg mr-2 "></i><a class="resume-link" href="tel:#">+38 067 535 31 64</a></li>
+								<li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg mr-2"></i><a class="resume-link" href="mailto:#">serg.dsv@gmail.com</a></li>
+								<li class="mb-2"><i class="fas fa-globe fa-fw fa-lg mr-2"></i><a class="resume-link" href="https://www.linkedin.com/in/sergey-danilevsky-690051101/">https://www.linkedin.com/</a></li>
+							</ul>
+						</div><!--//resume-contact-->
+					</div><!--//row-->
+
+				</div><!--//resume-header-->
+				<hr>
+				<div class="resume-intro py-3">
+					<div class="media flex-column flex-md-row align-items-center">
+						<img class="resume-profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto" src="{% static 'images/dsv.png' %}" alt="image">
+						<div class="media-body text-left">
+							<p class="mb-0">
+                                 Over 20+ years of experience in IT industry as a System Engineer, comprising of Development, Systems Administration and Software Configuration Management.
+                                Experience includes written Ansible playbooks,
+                                Setup and management system of containerization Docker.
+                                Set up the frameworks (Laravel, VueJS, Django) for one clicks build and deployment on non-production environments.
+                                Experience in working on version control systems git and used source code management client tools like git bash, Github and other command-line applications.
+                                Building and provisioning infrastructure using Terraform.
+                            </p>
+						</div><!--//media-body-->
+					</div>
+				</div><!--//resume-intro-->
+				<hr>
+				<div class="resume-body">
+					<div class="row">
+						<div class="resume-main col-12 col-lg-8 col-xl-9 pr-0 pr-lg-5">
+                            <section class="project-section py-3">
+								<h3 class="text-uppercase resume-section-heading mb-4">Key skills and competencies</h3>
+								<div class="item mb-3">
+									<div class="item-heading row align-items-center mb-2">
+
+									</div>
+									<div class="item-content">
+										<ul>
+                                            <li><b>Linux administration:</b> RHEL, Debian</li>
+                                            <li><b>Cloud:</b> AWS, GCP</li>
+                                            <li><b>Version control systems:</b> GitHub, GitLab, Bitbucket</li>
+                                            <li><b>Configuration management:</b> Ansible, Vagrant, Terraform</li>
+                                            <li><b>System of virtualization:</b> VMware, Virtualbox</li>
+                                            <li><b>System of containerization:</b> Docker</li>
+                                            <li><b>System monitoring:</b> Cacti, RRDTool, Zabbix, Nagios</li>
+                                            <li><b>Script language:</b> Python, PHP</li>
+                                            <li><b>Frameworks:</b> Laravel(PHP), VueJS(JS), Django(Python) </li>
+                                            <li><b>Network equipment:</b> D-link, TP-link</li>
+                                        </ul>
+									</div>
+								</div><!--//item-->
+							</section><!--//project-section-->
+                            <section class="project-section py-3">
+								<h3 class="text-uppercase resume-section-heading mb-4">Programming:</h3>
+								<div class="item mb-3">
+									<div class="item-heading row align-items-center mb-2">
+
+									</div>
+									<div class="item-content">
+										<ul>
+                                            <li><b>Technologies:</b> npm, webpack, composer, gulp</li>
+                                            <li><b>Laravel framework:</b> nested-set, laravel-adminlte, laravel-sluggable,
+                                                intervention/image, cviebrock/eloquent-sluggable, overtrue/laravel-follow,
+                                                laravelcollective/html, bootstrap
+                                            </li>
+                                            <li><b>Vue.JS framework:</b> bootstrap-vue ,fortawesome/fontawesome-svg-core,
+                                                vue-router, store, vuelidate
+                                            </li>
+                                            <li><b>Django framework:</b> django-mptt, slugify</li>
+                                            <li><b>Python:</b> aiogram (Telegram bot writing)</li>
+                                            <li><b>IDE, editor:</b> PHPStorm, PySharm, VSCode, Sublime Text</li>
+                                        </ul>
+									</div>
+								</div><!--//item-->
+							</section><!--//project-section-->
+							<section class="work-section py-3">
+								<h3 class="text-uppercase resume-section-heading mb-4">Work Experiences</h3>
+								<div class="item mb-3">
+									<div class="item-heading row align-items-center mb-2">
+										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Chief Engineer</h4>
+										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">ISP "LINK" | May 2010 - Present</div>
+
+									</div>
+									<div class="item-content">
+                                        <ul class="resume-list">
+                                            <li>solving various issues of organizing the work of an Internet provider</li>
+                                            <li>setting of various tasks for execution by technical specialists</li>
+                                            <li>development and support of the site of the company</li>
+                                            <li>tasks on work of technical support of clients</li>
+                                            <li>organization of server rooms from scratch</li>
+                                            <li>development and support of the site of the company</li>
+                                            <li>selection of equipment for various tasks of the Internet provider (servers, switches)</li>
+                                            <li>Setup and management of corporate VOIP telephony servers (Asterisk, FreePBX)</li>
+                                        </ul>
+									</div>
+								</div><!--//item-->
+								<div class="item mb-3">
+									<div class="item-heading row align-items-center mb-2">
+										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">System Engineer</h4>
+										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">ISP "DREAM-NET" | 2008 - 2010</div>
+
+									</div>
+									<div class="item-content">
+										<ul class="resume-list">
+											<li>installation and configuration Linux servers (Gentoo)</li>
+											<li>installation and configuration of the billing system "Netup"</li>
+                                            <li>installation and configuration of services (Apache, Postfix, Courier-POP3, DHCP, Proftpd, MySQL)</li>
+                                            <li>configuring active networking equipment: switch (HP, D-Link, Planet)</li>
+                                            <li>user support and advice</li>
+										</ul>
+									</div>
+								</div><!--//item-->
+								<div class="item">
+									<div class="item-heading row align-items-center mb-2">
+										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">System administrator</h4>
+										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">ISP "VIZIT" | 2006  - 2008</div>
+
+									</div>
+									<div class="item-content">
+                                        <ul class="resume-list">
+											<li>installation and configuration of servers based on OS Linux (ASPLinux, Gentoo)</li>
+											<li>tuning of equipment DOCSIS (Motorola BSR-1000, Motorola BSR 2000)</li>
+                                            <li>network equipment configuration: (HP, D-Link, Planet)</li>
+                                            <li>configuring and supporting various network services</li>
+                                            <li>technical support and advising users</li>
+                                            <li>encoding of digital channels in a network through a coding system CONAX.</li>
+										</ul>
+									</div>
+								</div><!--//item-->
+							</section><!--//work-section-->
+						</div><!--//resume-main-->
+						<aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
+							<section class="skills-section py-3">
+								<h3 class="text-uppercase resume-section-heading mb-4">Skills</h3>
+                                <div class="item">
+									<h4 class="item-title">Protocols</h4>
+									<ul class="list-unstyled resume-skills-list">
+										<li class="mb-2">DHCP, DNS, SMTP, POP3, IMAP, NAT, VPN, BGP, SNMP, HTTP, HTTPS, FTP, SSH, telnet</li>
+
+										</ul>
+									</div><!--//item-->
+									<div class="item">
+										<h4 class="item-title">Professional</h4>
+										<ul class="list-unstyled resume-skills-list">
+											<li class="mb-2">Effective communication</li>
+											<li class="mb-2">Team player<li>
+												<li class="mb-2">Strong problem solver</li>
+												<li>Good time management</li>
+											</ul>
+										</div><!--//item-->
+									</section><!--//skills-section-->
+									<section class="education-section py-3">
+										<h3 class="text-uppercase resume-section-heading mb-4">Education</h3>
+										<ul class="list-unstyled resume-education-list">
+											<li class="mb-3">
+												<div class="resume-degree font-weight-bold">Kremenchuk Polytechnic University</div>
+												<div class="resume-degree-org text-muted">Computer systems and networks</div>
+												<div class="resume-degree-time text-muted">1998 - 2002</div>
+											</li>
+											<li>
+												<div class="resume-degree font-weight-bold">Higher vocational school №7, Kremenchuk</div>
+												<div class="resume-degree-org text-muted">Electrician for repair of electrical equipment</div>
+												<div class="resume-degree-time text-muted">1996 - 1998</div>
+											</li>
+										</ul>
+									</section><!--//education-section-->
+									<section class="education-section py-3">
+										<h3 class="text-uppercase resume-section-heading mb-4">Courses</h3>
+										<ul class="list-unstyled resume-awards-list">
+											<li class="mb-3">
+												<div class="font-weight-bold">Beetroot academy</div>
+												<div class="text-muted">Junior Back-End Developer</div>
+                                                <div class="text-muted">Course content: Environment Setting; PHP Developing Introduction;
+                                                Functional Programming; Work with MySQL Databases; Object Oriented Programming; Frameworks (Laravel)
+                                                </div>
+                                                <div class="resume-degree-time text-muted">September 2019 - January 2020</div>
+
+											</li>
+										</ul>
+									</section><!--//education-section-->
+									<section class="skills-section py-3">
+										<h3 class="text-uppercase resume-section-heading mb-4">Languages</h3>
+										<ul class="list-unstyled resume-lang-list">
+											<li class="mb-2">Russian <span class="text-muted">(Native)</span></li>
+											<li>Ukrainian <span class="text-muted">(Native)</span></li>
+										</ul>
+									</section><!--//certificates-section-->
+									<section class="skills-section py-3">
+										<h3 class="text-uppercase resume-section-heading mb-4">Interests</h3>
+										<ul class="list-unstyled resume-interests-list mb-0">
+											<li class="mb-2">Electronic</li>
+											<li class="mb-2">Snowboarding</li>
+											<li class="mb-2">Photography</li>
+											<li>Travelling</li>
+										</ul>
+									</section><!--//certificates-section-->
+
+								</aside><!--//resume-aside-->
+							</div><!--//row-->
+						</div><!--//resume-body-->
+						<hr>
+						<div class="resume-footer text-center">
+							<ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
+								<li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="#"><i class="fab fa-github-square fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">github.com/username</span></a></li>
+								<li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="#"><i class="fab fa-linkedin fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">linkedin.com/in/username</span></a></li>
+								<li class="list-inline-item mb-lg-0 mr-lg-3"><a class="resume-link" href="#"><i class="fab fa-twitter-square fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">@twittername</span></a></li>
+							</ul>
+						</div><!--//resume-footer-->
+					</article>
+
+				</div><!--//container-->
+
+				<footer class="footer text-center py-4">
+					<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+					<small class="copyright text-muted">Designed with <i class="fas fa-heart"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+				</footer>
+
+			</div><!--//main-wrapper-->
+
+
+{% endblock %}

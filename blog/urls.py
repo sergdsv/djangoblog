@@ -7,5 +7,6 @@ urlpatterns = [
     path('post/<slug>/', PostController.show, name='post-detail'),
     path('category/<slug>/', PostController.category_show, name='category-show'),
     path('comment_add/<id>', CommentController.comment_add, name='comment-add'),
-    path('test/', TestController.test, name='test')
+    path('test/', TestController.test, name='test'),
+    path('resume/', PostController.resume, name='resume')
 ]
