@@ -1,8 +1,15 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
 
-
-
-{% block content %}
+<html lang="ru">
+    <head>
+        <title>{% block title %}Home {% endblock title %} | CRM Easy</title>
+        {% load static %}
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+        <link href="{% static 'css/app.css' %}" rel="stylesheet" media="screen">
+    </head>
+<body style="padding: 0">
 {% load static %}
     <link href="{% static 'css/resume.css' %}" rel="stylesheet" media="screen">
 	<div class="main-wrapper">
@@ -219,7 +226,6 @@
 										<h3 class="text-uppercase resume-section-heading mb-4">Interests</h3>
 										<ul class="list-unstyled resume-interests-list mb-0">
 											<li class="mb-2">Electronic</li>
-											<li class="mb-2">Snowboarding</li>
 											<li class="mb-2">Photography</li>
 											<li>Travelling</li>
 										</ul>
@@ -245,6 +251,5 @@
 
 				</div><!--//container-->
 			</div><!--//main-wrapper-->
-
-
-{% endblock %}
+</body>
+</html>
