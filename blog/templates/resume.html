@@ -14,7 +14,7 @@
     <link href="{% static 'css/resume.css' %}" rel="stylesheet" media="screen">
 	<div class="main-wrapper">
 		<div class="container px-3 px-lg-5">
-			<article class="resume-wrapper mx-auto theme-bg-light py-3 px-5 mb-2 my-2 shadow-lg">
+			<article class="resume-wrapper mx-auto theme-bg-light py-4 px-5 shadow-lg">
 
 				<div class="resume-header">
 					<div class="row align-items-center">
@@ -26,14 +26,13 @@
 							<ul class="list-unstyled mb-0">
 								<li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg mr-2 "></i><a class="resume-link" href="tel:#">+38 067 535 31 64</a></li>
 								<li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg mr-2"></i><a class="resume-link" href="mailto:#">serg.dsv@gmail.com</a></li>
-								<li class="mb-2"><i class="fas fa-globe fa-fw fa-lg mr-2"></i><a class="resume-link" href="https://www.linkedin.com/in/sergey-danilevsky-690051101/">https://www.linkedin.com/</a></li>
 							</ul>
 						</div><!--//resume-contact-->
 					</div><!--//row-->
 
 				</div><!--//resume-header-->
 				<hr>
-				<div class="resume-intro py-3">
+				<div class="resume-intro">
 					<div class="media flex-column flex-md-row align-items-center">
 {#						<img class="d-print-none resume-profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto" src="{% static 'images/dsv.png' %}" alt="image">#}
 						<div class="media-body text-left">
@@ -41,7 +40,7 @@
                                 Over 20+ years of experience in IT industry as a System Engineer, comprising of Development, Systems Administration and Software Configuration Management.
                                 Experience includes written Ansible playbooks,
                                 Setup and management system of containerization Docker.
-                                Set up the frameworks (Laravel, VueJS, Django) for one clicks build and deployment on non-production environments.
+                                Set up the frameworks (Laravel, VueJS, Django) for one clicks build and deployment.
                                 Experience in working on version control systems git and used source code management client tools like git bash, Github and other command-line applications.
                                 Building and provisioning infrastructure using Terraform.
                             </p>
@@ -108,9 +107,7 @@
 									<div class="item-content">
                                         <ul class="resume-list">
                                             <li>solving various issues of organizing the work of an Internet provider</li>
-                                            <li>setting of various tasks for execution by technical specialists</li>
                                             <li>development and support of the site of the company</li>
-                                            <li>tasks on work of technical support of clients</li>
                                             <li>organization of server rooms from scratch</li>
                                             <li>development and support of the site of the company</li>
                                             <li>selection of equipment for various tasks of the Internet provider (servers, switches)</li>
@@ -146,7 +143,6 @@
                                             <li>network equipment configuration: (HP, D-Link, Planet)</li>
                                             <li>configuring and supporting various network services</li>
                                             <li>technical support and advising users</li>
-                                            <li>encoding of digital channels in a network through a coding system CONAX.</li>
 										</ul>
 									</div>
 								</div><!--//item-->
@@ -156,18 +152,17 @@
 									</div>
 									<div class="item-content">
                                         <ul class="resume-list">
-											<li>Install and configure VPS servers from different hosting providers.</li>
-						                    <li>Transfer and configuration of DNS zones.</li>
-                                            <li>Troubleshoot a heavy server load.</li>
-                                            <li>Transferring sites from one hosting provider to another.</li>
-                                            <li>Finding malicious code and deleting it in scripts on the server.</li>
+											<li>install and configure VPS servers from different hosting providers</li>
+						                    <li>transfer and configuration of DNS zones</li>
+                                            <li>troubleshoot a heavy server load</li>
+                                            <li>finding malicious code and deleting it in scripts on the server</li>
 										</ul>
 									</div>
 								</div><!--//item-->
 							</section><!--//work-section-->
 						</div><!--//resume-main-->
 						<aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
-							<section class="skills-section py-1">
+							<section class="skills-section">
 								<h3 class="text-uppercase resume-section-heading mb-2">Skills</h3>
                                 <div class="item">
 									<h4 class="item-title">Protocols</h4>
@@ -178,17 +173,25 @@
 									<div class="item">
 										<h4 class="item-title">Professional</h4>
 										<ul class="list-unstyled resume-skills-list">
-											<li class="mb-1">Effective communication</li>
-											<li class="mb-1">Team player<li>
-                                            <li class="mb-1">Strong problem solver</li>
+											<li>Effective communication</li>
+											<li>Team player</li>
+                                            <li>Strong problem solver</li>
                                             <li>Good time management</li>
                                         </ul>
 										</div><!--//item-->
 									</section><!--//skills-section-->
-									<section class="education-section py-1">
+									<section class="education-section">
 										<h3 class="text-uppercase resume-section-heading mb-2">Education</h3>
 										<ul class="list-unstyled resume-education-list">
-											<li class="mb-3">
+                                            <li>
+												<div class="resume-degree font-weight-bold">Beetroot academy</div>
+												<div class="resume-degree-org text-muted">Junior Back-End Developer
+                                                    Course content: Environment Setting; PHP Developing Introduction;
+                                                    Functional Programming; Work with MySQL Databases; Object Oriented Programming; Frameworks (Laravel)
+                                                </div>
+												<div class="resume-degree-time text-muted">September 2019 - January 2020</div>
+											</li>
+                                            <li>
 												<div class="resume-degree font-weight-bold">Kremenchuk Polytechnic University</div>
 												<div class="resume-degree-org text-muted">Computer systems and networks</div>
 												<div class="resume-degree-time text-muted">1998 - 2002</div>
@@ -200,42 +203,16 @@
 											</li>
 										</ul>
 									</section><!--//education-section-->
-									<section class="education-section py-1">
-										<h3 class="text-uppercase resume-section-heading mb-2">Courses</h3>
-										<ul class="list-unstyled resume-awards-list">
-											<li class="mb-3">
-												<div class="font-weight-bold">Beetroot academy</div>
-												<div class="text-muted">Junior Back-End Developer</div>
-                                                <div class="text-muted">Course content: Environment Setting; PHP Developing Introduction;
-                                                Functional Programming; Work with MySQL Databases; Object Oriented Programming; Frameworks (Laravel)
-                                                </div>
-                                                <div class="resume-degree-time text-muted">September 2019 - January 2020</div>
-
-											</li>
-										</ul>
-									</section><!--//education-section-->
-									<section class="skills-section py-1">
+									<section class="skills-section">
 										<h3 class="text-uppercase resume-section-heading mb-2">Languages</h3>
 										<ul class="list-unstyled resume-lang-list">
-											<li class="mb-2">Russian <span class="text-muted">(Native)</span></li>
+											<li>Russian <span class="text-muted">(Native)</span></li>
 											<li>Ukrainian <span class="text-muted">(Native)</span></li>
 										</ul>
 									</section><!--//certificates-section-->
-									<section class="skills-section py-3">
-										<h3 class="text-uppercase resume-section-heading mb-4">Interests</h3>
-										<ul class="list-unstyled resume-interests-list mb-0">
-											<li class="mb-1">Electronic</li>
-											<li class="mb-1">Photography</li>
-											<li>Travelling</li>
-										</ul>
-									</section><!--//certificates-section-->
-
 								</aside><!--//resume-aside-->
 							</div><!--//row-->
 						</div><!--//resume-body-->
-						<hr>
-						<div class="resume-footer text-center">
-						</div><!--//resume-footer-->
 					</article>
 
 				</div><!--//container-->
